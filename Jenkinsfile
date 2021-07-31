@@ -8,6 +8,11 @@ pipeline {
                     echo "Multiline shell steps works too"
                     java -version
                 '''
+                
+                script {
+                   def data = readFile(file: 'rubbish')
+                   println(data)
+               }
             }
         }
     }
