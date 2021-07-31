@@ -7,14 +7,17 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too"
                     java -version
-                '''
+                '''              
                 
-                script {
-                   def data = readFile(file: 'rubbish')
-                   println(data)
-                }
                }
             }
+        stage('read') {
+           steps {
+               script {
+                   def data = readFile(file: 'rubbish)
+                   println(data)
+               }
+           }
         }
     }
 }
