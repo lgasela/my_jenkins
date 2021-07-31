@@ -12,6 +12,7 @@ pipeline {
                 script {
                    def data = readFile(file: 'rubbish')
                    println(data)
+                }
                }
             }
         }
