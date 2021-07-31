@@ -14,7 +14,7 @@ pipeline {
         stage('read') {
            steps {
                script {
-                   def data = readFile(file: 'rubbish)
+                   def data = readFile(file: 'rubbish')
                    println(data)
                }
            }
